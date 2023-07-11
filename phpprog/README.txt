@@ -1,19 +1,11 @@
-GROUP - 18
-
-TEAM MEMBERS :
-
-DEEPAK SANTOSH R - 20BCE1621
-SANJANAA S - 20BCE1876
-MADHUMITA K - 20BCE1891
-
-
+<he>Introduction</h3>
 An online Apparel Store Management System has been developed using HTML, CSS, Javascript, PHP and MYSQL.
 The main aim of this project is to automate the functionalities of a online user-friendly apparel store. The purpose of this project is to develop a user-friendly interface for the customers 
 to explore the products available in the apparel store and buy them according to their choice and preference. The interface also authorizes the admin to manage all the daily transactions, 
 adding new clothes, setting up the product offers, and monitoring customer information. 
 Through Finerthreads, customers can also shop tailormade apparels which are customized according to the customer's preference and specifications. 
 
-Work completed :
+<h3>Work completed :</h3>
 Front-End for the website
 Back-End part of the website
 Database for the entire website
@@ -22,11 +14,11 @@ Session Handling
 File Upload
 Email with attachment using SMTP(PHPmailer)
 
-Languages Used for Front-End: HTML, CSS, Javascript
-Languages Used for Back-End: SQL, PHP
-Server used: XAMPP
+<h4>Languages Used for Front-End:</h4> HTML, CSS, Javascript
+<h4>Languages Used for Back-End:</h4> SQL, PHP
+<h4>Server used:</h4> XAMPP
 
-Flow of execution of our website :
+<h3>Flow of execution of our website :</h3>
 
 Finerthreads Webpage begins with a MAIN page(MAIN.php) where the user can view the layout of our website. 
 The MAIN page has two options such as SIGNUP page(SIGNUP.php) for new users who need to create a new account and register and LOGIN page(LOGIN.php) for existing users to login into the website.
