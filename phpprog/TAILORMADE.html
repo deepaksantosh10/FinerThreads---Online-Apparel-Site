@@ -1,0 +1,311 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="TAILORMADE.css">
+        <div class="first">
+            <p><img src="logo.png" style="margin-top: 15px;margin-left: 10px;height:130px;width:220px;"></p>
+            <a href=""><img src="profile1.png" style="position: relative;left: 1190px;top: -136px;"></a>
+            <a href=""><p style="position: relative;left: 1244px;top: -186px;">Account</p></a>
+            <img src="line.png" style="position: relative;left: 1342px;top: -240px;">
+            <a href="WISHLIST.php"><img src="wishlist.png" style="position: relative;left: 1347px;top: -236px;"></a>
+            <a href="WISHLIST.php"><p style="position: relative;left: 1420px;top: -290px;">Wishlist</p></a>
+            <img src="line.png" style="position: relative;left: 1510px;top: -340px;">
+            <a href="CART.php"><img src="cart.png" style="position: relative;left: 1515px;top: -338px;"></a>
+            <a href="CART.php"><p style="position: relative;left: 1600px;top: -388px;">Cart</p></a>
+            <button type="button" name="HOME" style="position:relative;margin-left:760px;top: -360px;"><a href="HOME.php">HOME</a></button>
+            <button type="button" name="RENTAL" style="position:relative;margin-left:20px;top: -360px;"><a href="">RENTAL</a></button>
+            <button type="button" name="TAILOR-MADE" style="position:relative;margin-left:20px;top: -360px;"><a href="TAILORMADE.php">TAILOR-MADE</a></button>
+            <button type="button" name="OFFERS" style="position:relative;margin-left:20px;top: -360px;"><a href="OFFER.php">OFFERS</a></button>
+            <button type="button" name="ABOUT US" style="position:relative;margin-left:20px;top: -360px;"><a href="ABOUTUS.php">ABOUT US</a></button>
+            <button type="button" name="CONTACT US" style="position:relative;margin-left:20px;top: -360px;"><a href="CONTACT.php">CONTACT US</a></button>
+            <button type="button" name="FEEDBACK" style="position:relative;margin-left:20px;top: -360px;"><a href="FEEDBACK.php">FEEDBACK</a></button>
+        </div>
+        <div class="tailormade">
+            <fieldset>
+                <legend align="left"><span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 30px;text-shadow: 4px 4px 4px rgba(0,0,0,0.59);color: black;">TAILOR-MADE</span></legend>
+                <form name="form2">
+                    <center>
+                    <table>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Cname">Category Name</label></td>
+                            <td> </td><td> </td><td> </td><td> </td>
+                            <td><input type="text" id="Cname" onchange="check();"></td>
+                            <td><label for="Colour">Colour</label></td>
+                            <td> </td><td> </td><td> </td><td> </td>
+                            <td><input type="color" id="Colour" onchange="check();"></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td><label for="Com">Composition</label></td>
+                            <td> </td><td> </td><td> </td><td> </td>
+                            <td><input type="text" id="Com" onchange="check();"></td>
+                            <td><label for="EDD">Expected Delivery Date</label></td>
+                            <td> </td><td> </td><td> </td><td> </td>
+                            <td><input type="date" id="EDD"onchange="check();"></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td><label for ="patternimage">Pattern Image</label></td>
+                            <td> </td><td> </td><td> </td><td> </td>
+                            <td>
+                                <input type="file" id="patternimage" style="background-color: #FFFAF2;">
+                                <a id="upload" name="upload" style="font-size:15px;border:1px black solid;background-color:#e8ebed;padding: 4px;border-radius: 4px;">Upload</a>
+                            </td>
+                            <td><label for ="CategoryImage">Category Image</label></td></td>
+                            <td> </td><td> </td><td> </td><td> </td>
+                            <td><input type="file" id="CategoryImage" style="background-color: #FFFAF2;"></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td><label for="Mat">Material</label></td>
+                            <td> </td><td> </td><td> </td><td> </td>
+                            <td>
+                                <select style="width: 200;height: 30px;" onchange="check();">
+                                    <option value="none" selected disabled hidden>Select your choice of material</option>
+                                    <option value="cotton">Cotton</option>
+                                    <option value="polyster">Polyster</option>
+                                    <option value="silk">Silk</option>
+                                    <option value="wool">Wool</option>
+                                    <option value="linen">Linen</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td><label for ="measurements">Measurements</label></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td colspan="20"><label for="neck">Neck</label>
+                            <input type="text" onchange="check();" id="neck" style="width: 50;">
+                            <label for="waist">Waist</label>
+                            <input type="text" onchange="check();"  id="waist" style="width: 50;">
+                            <label for="armlength">Arm Length</label>
+                            <input type="text" onchange="check();" id="armlength" style="width: 50;">
+                            <label for="Shoulder">Shoulder</label>
+                            <input type="text" onchange="check();" id="Shoulder" style="width: 50;">
+                            <label for="PantLength">Pant Length</label>
+                            <input type="text" onchange="check();" id="PantLength" style="width: 50;"></td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td><label for="Desc">Description</label></td>
+                            <td> </td><td> </td><td> </td><td> </td>
+                            <td><textarea cols="40" rows="5" id="Desc" name="Desc" style="resize: none;" onchange="check();"></textarea></td>
+                        </tr>
+                    </table>
+                </center> 
+                <button type="submit" style="background-color: black;color: #D9CDC3;border-radius: 4px;position: relative;top:20px;left: 20px; font-size: 20px;padding: 10px;width: 125px;" onclick="check();">Place Order</button>
+                </form>
+            </fieldset>
+            </div> 
+            <div class="third">
+                <p style="color: #D9CDC3;position: relative;left: 600px;top: 13px;font-size:20px;">KEEP IN TOUCH</p>
+          <a href=""><img src="instagram.png" style="position: relative;left: 800px;top: -34px;"></a>
+          <a href=""><img src="twitter.png" style="position: relative;left: 840px;top: -34px;"></a>
+          <a href=""><img src="youtube.png" style="position: relative;left: 880px;top: -34px;"></a>
+          <a href=""><img src="facebook.png" style="position: relative;left: 920px;top: -34px;"></a>
+            </div>
+        </div>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function AddReqValidation(element)
+            {
+                document.getElementById(element).style.border="2px solid #f00";
+            }
+            function RemoveReqValidation(element)
+            {
+                document.getElementById(element).style.border="1px solid #000";
+            }
+        
+        
+                function check()
+                {
+                    var returnval=true;
+                    var fn = document.getElementById("Fname").value;
+                    var e = document.getElementById("Email").value;
+                    var cn = document.getElementById("Cname").value;
+                    var c = document.getElementById("Colour").value;
+                    var p = document.getElementById("Pno").value;
+                    var edd = document.getElementById("EDD").value;
+                    var com = document.getElementById("Com").value;
+                    var mat = document.getElementById("Mat").value;
+                    var neck = document.getElementById("neck").value;
+                    var waist = document.getElementById("waist").value;
+                    var armlength = document.getElementById("armlength").value;
+                    var shoulder = document.getElementById("Shoulder").value;
+                    var pantlength = document.getElementById("PantLength").value;
+                    var Desc = document.getElementById("Desc").value;
+                    var reg1 = /^\w+([\.\_]?\w+)*\@\w+([\.]?\w{2,3})+$/;
+                    var reg2 = /^\d{10}$/;
+                    var cnt=0;
+                    if (fn=="" || fn== null){
+                        cnt++;
+                        AddReqValidation("Fname");
+                    } 
+                    else{
+                        RemoveReqValidation("Fname");
+                    } 
+                    if (e=="" || e== null){
+                        cnt++;
+                        AddReqValidation("Email");
+                    } 
+                    else{
+                        RemoveReqValidation("Email");
+                        if(!(reg1.test(e)))
+                    {
+                        cnt++;
+                        AddReqValidation("Email");
+                        alert("Please enter a valid Email-ID!!.") 
+                    }
+                    else
+                    {
+                        RemoveReqValidation("Email");
+                    }  
+                    } 
+                    if (cn=="" || cn== null){
+                        cnt++;
+                        AddReqValidation("Cname");
+                    } 
+                    else{
+                        RemoveReqValidation("Cname");   
+                    } 
+                    if (p=="" || p== null)
+                    {
+                        cnt++;
+                        AddReqValidation("Pno");
+                    } 
+                    else
+                    {
+                        RemoveReqValidation("Pno");
+                        if(!(reg2.test(p)))
+                    {
+                        cnt++;
+                        AddReqValidation("Pno");
+                        alert("Please enter valid Phone Number!!."); 
+                    }
+                    else
+                    {
+                        RemoveReqValidation("Pno");
+                    }
+                    } 
+                    if (edd=="" ||edd== null){
+                        cnt++;
+                        AddReqValidation("EDD");
+                    } 
+                    else{
+                        RemoveReqValidation("EDD");   
+                    } 
+                    if (com=="" || com== null){
+                        cnt++;
+                        AddReqValidation("Com");
+                    } 
+                    else{
+                        RemoveReqValidation("Com");   
+                    } 
+                    if (mat=="" || mat== null){
+                        cnt++;
+                        AddReqValidation("Mat");
+                    } 
+                    else
+                    {
+                        RemoveReqValidation("Mat");   
+                    } 
+                    if (neck==""||neck== null)
+                    {
+                        cnt++;
+                        AddReqValidation("neck");
+                    } 
+                    else
+                    {
+                        RemoveReqValidation("neck");   
+                    } 
+                    if (waist==""||waist== null)
+                    {
+                        cnt++;
+                        AddReqValidation("waist");
+                    } 
+                    else
+                    {
+                        RemoveReqValidation("waist");
+                    } 
+                    if (armlength==""||armlength== null)
+                    {
+                        cnt++;
+                        AddReqValidation("armlength");
+                    } 
+                    else
+                    {
+                        RemoveReqValidation("armlength");
+                    } 
+                    if (shoulder==""||shoulder== null)
+                    {
+                        cnt++;
+                        AddReqValidation("Shoulder");
+                    } 
+                    else
+                    {
+                        RemoveReqValidation("Shoulder");
+                    } 
+                    if (pantlength==""||pantlength== null)
+                    {
+                        cnt++;
+                        AddReqValidation("PantLength");
+                    } 
+                    else
+                    {
+                        RemoveReqValidation("PantLength");
+                    }
+                    if (Desc=="" || Desc== null)
+                    {
+                        cnt++;
+                        AddReqValidation("Desc");
+                    } 
+                    else
+                    {
+                        RemoveReqValidation("Desc");
+                    }
+                    if(cnt>0)  
+                    {
+                        returnval=false;
+                        return false;      
+                    }
+                    else
+                    {
+                        return returnval;
+                    }
+                }
+                function fnSubmit()
+                {
+                    var ret=check();          
+                    if(ret)
+                    {
+                        var _form=document.getElementById("frmTailor");
+                        _form.action = '#';
+                        _form.method = 'POST';
+                        _form.submit();
+                    }  
+                }   
+        </script>
+    </body>
+</html>

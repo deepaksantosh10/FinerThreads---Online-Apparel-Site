@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="app.css" />
+
+    <script src="wishlist.js"></script>
+    <script src="cart.js"></script>
+    <script src="woman-products.js"></script>
+    <script src="men-products.js"></script>
+  </head>
+  <body>
+    <iframe src="navbar.html" width="100%"></iframe>
+    <h1>Wishlist</h1>
+    <div>
+      <table class="cart">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="tbhead">Product Details</th>
+            <th class="tbhead">Price</th>
+          </tr>
+        </thead>
+        <tbody id="wishlist"></tbody>
+      </table>
+      <div id="sum" class="result"></div>
+    </div>
+  </body>
+  <script>
+    function displayWishlist() {
+      // Get cart placeholder (tbody)
+      let wishlistElm = document.getElementById("wishlist");
+      let wishlist = getWishlist();
+      wishlistElm.innerHTML = wishlist
+        .map((item) => {
+          return displayWishlistItem(item);
+        })
+        .join("");
+    }
+
+    function displayWishlistItem(item) {
+      return `
+              <tr>
+                <td><img src='${item.img}' style='width:200px; height:200px'></td>
+
+                <td>
+                    <div>
+                      <div class="item-name"> ${item.name}</div>
+                      <div>Size:${item.size} &emsp; Qty:${item.quantity}</div><br>
+                      <div><button onclick="deleteItem('${item.product}')">Remove</button></div><br> 
+                      <div><button type="button" onclick="addItem('${item.product}', '${item.name}', ${item.price}, '${item.size}', '${item.img}')">Add to cart</button></div>
+                      </div>
+                </td>
+
+                <td class="item-price">${item.price}</td>
+
+              </tr>
+           `;
+    }
+
+    // add product to cart
+    function addItem(id, name, price, size, img) {
+      // let sel = document.getElementById("sel-" + id);
+      // let size = sel.value;
+      let cartItem = {
+        product: id,
+        name: name,
+        price: price,
+        quantity: 1,
+        size: size,
+        img: img,
+      };
+
+      // Append cart item to cart
+      let c = getCart(); // get from session/local storage
+      c.push(cartItem);
+      console.log(c);
+      setCart(c);
+    }
+
+    function deleteItem(id) {
+      let wishlist = getWishlist();
+
+      //Remove wishlist item matching specified id
+      wishlist = wishlist.filter((e) => e.product !== id);
+
+      setWishlist(wishlist);
+      displayWishlist();
+    }
+    displayWishlist();
+  </script>
+</html>

@@ -1,0 +1,136 @@
+<html>
+<head>
+  <title>Finer Threads</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="CHECKOUT.css">
+</head>
+<body >
+
+  <fieldset style="height: 1250px;margin-right: 10ppx;">
+    <legend style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 30px;text-shadow: 4px 4px 4px rgba(0,0,0,0.59);color: black;">PAYMENT</legend>
+  <form method="post" action="checkout.php" class="checkout">
+    <label for="fname" class="fa fa-user"><b>  First name:</b></label><br><br>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname" class="fa fa-user"><b>  Last name:</b></label><br><br>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email" class="fa fa-envelope"><b>  E-mail:</b></label><br><br>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="address" class="fa fa-address-card"><b>  Shipping Address:</b></label><br><br>
+    <textarea name="address" id="address" cols="30" rows="10"></textarea><br><br>
+    <label for="mop" class="fa fa-cc-visa"><b>  Mode of Payment:</b></label><br><br>
+    <div>
+      <fieldset style="border: 2px solid black ; width:600px; height:100px;"> 
+        <input type="radio"  name="mop" value="cod">
+        <label for="cd" class="fa fa-money"><b> Cash on Delivery</b></label><br><br>
+
+        <p>Delivery might take 7 to 9 buisness days.</p>
+      </fieldset>
+    </div><br><br>
+
+    <div>
+      <fieldset style="border: 2px solid black ; width:600px; height:400px;"> 
+        <input type="radio" name="mop" value="card">
+        <label for="cd" class="fa fa-credit-card-alt"><b> Credit/Debit card</b></label><br>
+
+          <div >
+            <h4>Card details</h4>
+          </div>
+
+          <div >
+            <label for="cardno">CARD NUMBER:</label><br>
+            <!-- Card Number -->
+            <input type="number" class="card-number" id="cardno" name="cardno" placeholder="Card Number"><br><br>
+            <label for="exp">CARD EXPIRY:</label><br>
+            <!-- Date Field -->
+            <div>
+              <div >
+                <select id="month" name="month">
+                  <option value="" selected disabled hidden>Month</option>
+                  <option value="january">January</option>
+                  <option value="february">February</option>
+                  <option value="march">March</option>
+                  <option value="april">April</option>
+                  <option value="may">May</option>
+                  <option value="june">June</option>
+                  <option value="july">July</option>
+                  <option value="august">August</option>
+                  <option value="september">September</option>
+                  <option value="october">October</option>
+                  <option value="november">November</option>
+                  <option value="december">December</option>
+                </select>
+              </div><br>
+              <div>
+                <select id="year" name="year">
+                  <option value="" selected disabled hidden>Year</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                </select>
+              </div><br>
+            </div>
+            <label for="cardver">CARD VERIFICATION:</label>
+            <!-- Card Verification Field -->
+            <div ><br>
+              <div>
+                <input type="text" placeholder="CVV"><br><br>
+              </div>
+              <div>
+                <p>3 or 4 digits usually found <br> on the signature strip</p>
+              </div>
+            </div>
+
+          </div>
+
+      </fieldset>
+
+
+    </div>
+    <label for="amount"><b>Amount:</b></label><br>
+    <input type="number" readonly id="amount" value="" name="amount"><br>
+   
+    <button type="submit"  name="submit" value="submit"
+         style="background-color: black;color: #D9CDC3;border-radius: 4px;position: relative;top: 10px;font-size: 20px;padding: 10px;width: 125px;">Confirm Payment</button>
+  </form>
+</fieldset>
+</body>
+<script defer>
+  function check()
+       {
+           var e = document.getElementById("email").value;
+           var cardno = document.getElementById("cardno").value;
+           var reg2 = /^\d{16}$/;
+           var reg = /^\w+([\.\_]?\w+)*\@\w+([\.]?\w{2,3})+$/;
+         
+           if(!(reg.test(e)))
+           {
+               alert("You have entered invalid Email ID");
+               return false;
+           }
+           if(!(reg2.test(cardno)))
+           {
+               console.log(reg2.test(cardno))
+               alert("Card number is invalid");
+               return false;
+           }
+            
+       }   
+
+       function populateAmount() {
+        let params = new URL(document.location).searchParams;
+         let amount = params.get("amount");
+         document.getElementById("amount").value = amount;
+       }
+       populateAmount();
+</script>
+</html>
+
+
+
+     

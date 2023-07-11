@@ -1,0 +1,47 @@
+html, body, 
+{
+    max-width: 100%;
+    overflow: visible;
+}
+.first
+{ 
+    height: 22%;
+    width: 100%;
+    background-color: #D9CDC3;  
+    
+}
+.third
+{
+    height:9%;
+    width: 100%;
+    background-color: black;
+    margin-top: -18px;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+button
+{
+    border: 0px;
+    background-color: #D9CDC3; 
+    position: relative;
+    top: -290px;
+}
+.about
+{
+    font-family: Lucida Calligraphy;
+    text-align:center;
+    font-size:medium;
+    position: relative;
+    font-style: oblique;
+    font-weight: 400;
+    color:black;
+    background-color: #fffaf1;
+    height:relative;
+}
+

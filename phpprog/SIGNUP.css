@@ -1,0 +1,55 @@
+html, body, head{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/*NAVIGATION BAR*/
+.first
+{ 
+    height: 22%;
+    width: 100%;;
+    background-color: #D9CDC3;  
+  
+    
+}
+.third
+{  
+    height:7%;
+    width: 100%;
+    background-color: black;
+}
+/*ANCHOR TAG FOR NAVIGATION BAR HYPERLINKS*/
+a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+button
+{
+    border: 0px;
+    background-color: #D9CDC3; 
+    position: relative;
+    top: -290px;
+}
+.signup
+{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 500px;
+    background-color: #FFFAF2;
+    color: #8d4f48;
+    font-family: Lucida Calligraphy;
+}
+input
+{
+    background-color: white;
+    color: black;
+    width: 200px;
+    height: 30px;
+}
+

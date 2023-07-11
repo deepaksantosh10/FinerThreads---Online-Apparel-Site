@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="SIGNUP.css">
+        <div class="first">
+            <p><img src="logo.png" style="margin-top: 15px;margin-left: 10px;height:130px;width:220px;"></p>
+            <a href=""><img src="profile1.png" style="position: relative;left: 1190px;top: -136px;"></a>
+            <a href=""><p style="position: relative;left: 1244px;top: -186px;">Account</p></a>
+            <img src="line.png" style="position: relative;left: 1342px;top: -240px;">
+            <a href=""><img src="wishlist.png" style="position: relative;left: 1347px;top: -236px;"></a>
+            <a href=""><p style="position: relative;left: 1420px;top: -290px;">Wishlist</p></a>
+            <img src="line.png" style="position: relative;left: 1510px;top: -340px;">
+            <a href="CART.html"><img src="cart.png" style="position: relative;left: 1515px;top: -338px;"></a>
+            <a href="CART.html"><p style="position: relative;left: 1600px;top: -388px;">Cart</p></a>
+            <button type="button" name="HOME" style="position:relative;margin-left:760px;top: -360px;"><a href="HOME.html">HOME</a></button>
+            <button type="button" name="RENTAL" style="position:relative;margin-left:20px;top: -360px;"><a href="">RENTAL</a></button>
+            <button type="button" name="TAILOR-MADE" style="position:relative;margin-left:20px;top: -360px;"><a href="TAILORMADE.html">TAILOR-MADE</a></button>
+            <button type="button" name="OFFERS" style="position:relative;margin-left:20px;top: -360px;"><a href="OFFER.html">OFFERS</a></button>
+            <button type="button" name="ABOUT US" style="position:relative;margin-left:20px;top: -360px;"><a href="ABOUTUS.html">ABOUT US</a></button>
+            <button type="button" name="CONTACT US" style="position:relative;margin-left:20px;top: -360px;"><a href="CONTACT.html">CONTACT US</a></button>
+            <button type="button" name="FEEDBACK" style="position:relative;margin-left:20px;top: -360px;"><a href="FEEDBACK.html">FEEDBACK</a></button>
+        </div>
+        <div class="signup">
+            <fieldset>
+            <legend><span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 30px;text-shadow: 4px 4px 4px rgba(0,0,0,0.59);color: black;">SIGN UP</span></legend>
+            <form action= "#" method="POST">
+                <center>
+                <table>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Fname">First Name</label></td>
+                        <td> </td><td> </td><td> </td><td> </td>
+                        <td><input type="text" id="Fname" name="Fname"></td>
+                        <td><label for="Lname">Last Name</label></td>
+                        <td> </td><td> </td><td> </td><td> </td>
+                        <td><input type="text" id="Lname" name="Lname"></td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr>
+                        <td><label for="Email">Email</label></td>
+                        <td> </td><td> </td><td> </td><td> </td>
+                        <td><input type="email" id="Email"  name="Email"></td>
+                        <td><label for="Pno">Phone Number</label></td>
+                        <td> </td><td> </td><td> </td><td> </td>
+                        <td><input type="tel" id="Pno" name="Pno"></td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr>
+                        <td><label for="Gender">Gender</label></td>
+                        <td> </td><td> </td><td> </td><td> </td>
+                        <td>
+                            <select id="gen" name="gen" style="width: 200;height: 30px;">
+                                <option value="none" selected disabled hidden>--Select your gender--</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </td>
+                        <td><label for="DOB">Date Of Birth</label></td>
+                        <td> </td><td> </td><td> </td><td> </td>
+                        <td><input type="date" id="dob" name="dob"></td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr>
+                        <td><label for ="pswd">Password</label></td>
+                        <td> </td><td> </td><td> </td><td> </td>
+                        <td><input type="password" id="pswd" name="pswd"></td>
+                        <td><label for ="cpswd">Confirm Password</label></td></td>
+                        <td> </td><td> </td><td> </td><td> </td>
+                        <td><input type="password" id="cpswd" name="cpswd"></td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td> </td><td> </td><td> </td><td> </td>
+                        <td><textarea cols="40" rows="5" name="te" id="te" style="resize: none;"></textarea></td>
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr>
+                        <td colspan="15"><input type="checkbox" id="TC" name="TC" style="width: 15px;height: 15px;"><label for="TC">I agree to <a href="">Terms & Conditions</a></label></td>
+                    </tr>
+                </table>
+                <button type="submit" onclick="check()" name="submit" value="submit" style="background-color: black;color: #D9CDC3;border-radius: 4px;position: relative;top: 10px;font-size: 20px;padding: 10px;width: 125px;">Submit</button>
+            </center> 
+            </form>
+        </fieldset>
+        </div>
+        
+        <div class="third">
+            <p style="color: #D9CDC3;position: relative;left: 600px;top: 13px;font-size:20px;">KEEP IN TOUCH</p>
+                <a href=""><img src="instagram.png" style="position: relative;left: 800px;top: -34px;"></a>
+                <a href=""><img src="twitter.png" style="position: relative;left: 840px;top: -34px;"></a>
+                <a href=""><img src="youtube.png" style="position: relative;left: 880px;top: -34px;"></a>
+                <a href=""><img src="facebook.png" style="position: relative;left: 920px;top: -34px;"></a>
+        </div>
+    </head>
+    <body>
+        <script>
+        function check()
+        {
+            var pd = document.getElementById("pswd").value;
+            var cpd = document.getElementById("cpswd").value;
+            var e = document.getElementById("Email").value;
+            var tcval = document.getElementById("TC").checked;
+            var reg = /^\w+([\.\_]?\w+)*\@\w+([\.]?\w{2,3})+$/;
+            if(tcval != true)
+            {
+                alert("Please agree to Terms & Conditions");
+                return false;
+            }
+            if(!(reg.test(e)))
+            {
+                alert("You have entered invalid Email ID");
+                return false;
+            }
+            if(pd != cpd)
+            {
+                alert("Passwords do not match!");
+                return false;
+            }     
+            if(pd == cpd && (reg.test(e)) && tcval == true)
+            {
+                alert("Account successfully created");
+                return false;
+            }  
+        }   
+        </script>
+        <?php
+$conn = mysqli_connect("localhost", "root", "","finerthreads");
+		if($conn === false)
+            {
+			die("ERROR: Could not connect. ". mysqli_connect_error());
+		}
+if(isset($_POST['submit'])) 
+{  
+    $Firstname = $_POST['Fname']; 
+    $Lastname = $_POST['Lname'];
+    $Email = $_POST['Email']; 
+    $Phonenumber = $_POST['pno']; 
+    $Gender = $_POST['gen']; 
+    $DOB = $_POST['dob']; 
+    $Password = $_POST['pswd']; 
+    $CPassword = $_POST['cpswd'];
+    $Address = $_POST['te']; 
+            
+    $sql = "INSERT INTO `registration` (`Firstname`, `Lastname`, `Email`, `Phonenumber`, `Gender`, `DOB`, `Password`, `CPassword`, `Address`) VALUES ('$Firstname', '$Lastname', '$Email', '$Phonenumber', '$Gender', '$DOB', '$Password', '$CPassword', '$Address');";
+    $result = mysqli_query($conn, $sql);
+    
+    if ($result) 
+    {
+          echo "user done";
+    }
+?>
+</body>
+</html>
